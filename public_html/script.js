@@ -4,4 +4,50 @@
  * and open the template in the editor.
  */
 
+$("document").ready(function() {
+    $(".blank").css("background-color", "yellow");
 
+    $('div:last p:nth-child(3)').css('background-color', 'pink');
+
+    $('p:last').css('color', 'red');
+
+    $('p:gt(4)').css('border-style', 'solid');
+
+    $('p:first').css({'background-color': 'cyan', 'color': 'white'});
+
+    $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+
+    $('h1').bind('click', mouseClick);
+    
+    $('#replaceWText').bind('click', replaceWText);
+    
+    $('#randpara').bind('click', removeAPara);
+    
+    $('#removePara').bind('click', removeAPara);
+    
+});
+
+function removeAPara(){
+    $('#randPara p:last').remove();
+}
+
+function addAPara (){
+    $('#randPara').append('<p>ADDED</p>');
+}
+
+function replaceWText(){
+    $('#replaceWText').text('Replaced1');
+}
+
+function mouseOverMe(){
+    $("hi").html("before effect");
+}
+
+function mouseOutMe(){
+    $('h1').html("after effect");
+}
+
+function mouseClick(){
+
+    $('p').html('clicked');
+}
