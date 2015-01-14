@@ -40,11 +40,11 @@ function replaceWText(){
 }
 
 function mouseOverMe(){
-    $("hi").html("before effect");
+    $('h1').html("bye");
 }
 
 function mouseOutMe(){
-    $('h1').html("after effect");
+    $('h1').html("hiii");
 }
 
 function mouseClick(){
