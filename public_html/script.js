@@ -6,6 +6,11 @@
 
 $("document").ready(function() {
     $(".blank").css("background-color", "yellow");
+    
+    $('#superhuman').accordion({header: "h3"});
+    $('#superhuman').css('width', '400px');
+    
+    $('h3').css('background', 'cyan');
 
     $('div:last p:nth-child(3)').css('background-color', 'pink');
 
@@ -25,7 +30,20 @@ $("document").ready(function() {
     
     $('#removePara').bind('click', removeAPara);
     
+    $("#hide").click(function() {
+        $("p").hide();
+    });
+
+    $("#show").click(function() {
+        $("p").show();
+    }); 
+    
 });
+
+
+function showThePage( ){
+    
+}   
 
 function removeAPara(){
     $('#randPara p:last').remove();
@@ -51,3 +69,5 @@ function mouseClick(){
 
     $('p').html('clicked');
 }
+
+
