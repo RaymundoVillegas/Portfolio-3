@@ -5,7 +5,7 @@
  */
 
 $("document").ready(function() {
-    $(".blank").css("background-color", "yellow");
+    $(".blank").css("background-color", "white");
     
     $('#superhuman').accordion({header: "h3"});
     $('#superhuman').css('width', '400px');

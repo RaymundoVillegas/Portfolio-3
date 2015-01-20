@@ -9,58 +9,59 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+        <link type="text/css" rel="stylesheet" href="css/custom-style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
         <script>
-    $(document).ready(function(){
-$("#hide").click(function(){
- $("p").hide();
-});
-$("#show").click(function(){
- $("p").show();
-});
-});
+    $(document).ready(function() {
+                $("#hide").click(function() {
+                    $("p").hide();
+                });
+                $("#show").click(function() {
+                    $("p").show();
+                });
+            });
         </script>
-        <script> 
-$(document).ready(function(){
-  $("button").click(function(){
-    $("div").animate({left:'250px'});
-  });
-});
-</script>
+        <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    $("div").animate({left: '250px'});
+                });
+            });
+        </script>
     </head>
 
     <body>
-        <p>If you click on the "Hide" button, I will disappear.</p>
+        <p id='name'>Raymundo Villegas</p>
         <button id="hide">Hide</button>
         <button id="show">Show</button>
-        
+
         <button>Start Animation</button>
-        <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
-        <div style="background:#A30000;height:100px;width:300px;position:fixed;">
+        <div style="background:white;height:100px;width:300px;position:fixed;">
         </div>
 
-        
+
         <div class="blank">
             <h1> Something </h1>
             <p id="removePara">bye</p>
             <p id="replaceWText">its ok....Don't cry..</p>
-            <p id="randPara">3</p>
-            <p id="4"></p>
-            <p>Script</p>
+           
         </div>
 
         <div id="superhuman" >
-            <h3>First</h3>
-            <p>1st</p>
-            <h3>Second</h3>
+            <h3>About Me</h3>
+            <p>Im ray</p>
+            <h3>THIS PAGE</h3>
             <p>2nd</p>
             <h3>Third</h3>
             <p>3rd</p>
-                
+
         </div>
-      
+
+        
         
         <script type="text/javascript" src="script.js"></script>
     </body>
